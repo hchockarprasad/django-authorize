@@ -38,7 +38,7 @@ Quick start
 
 .. |travis| image:: https://travis-ci.org/hchockarprasad/django-authorize.svg?branch=master
     :target: https://travis-ci.org/hchockarprasad/django-authorize
-.. |codacy| image:: https://api.codacy.com/project/badge/Grade/b300f959438e4ca7b948fb1065d7ce97
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/094403a27f8843f388824c2d2ab1e3b1
    :alt: Codacy Badge
    :target: https://www.codacy.com/app/hchockarprasad/django-authorize?utm_source=github.com&utm_medium=referral&utm_content=hchockarprasad/django-authorize&utm_campaign=badger
 .. |pypipackage| image:: https://img.shields.io/pypi/v/django-authorize.svg
