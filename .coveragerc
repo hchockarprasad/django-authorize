@@ -1,4 +1,6 @@
 [run]
+source =
+    authorize
 omit =
     *venv*
     *.tox*
