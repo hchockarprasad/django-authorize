@@ -28,6 +28,7 @@ SETTINGS_DICT = {
         'authorize',
     ),
     # Test cases will override this liberally.
+    'ROOT_URLCONF': 'authorize.urls',
     'DATABASES': {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
