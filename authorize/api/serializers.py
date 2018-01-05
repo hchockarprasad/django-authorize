@@ -33,5 +33,53 @@ class MenuOutwardSerializer(DynamicFieldsModelSerializer):
         fields = (
             'id',
             'name',
+            'code',
         )
 
+
+class MenuCreateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Menu
+
+        fields = (
+            'id',
+            'name',
+            'code',
+        )
+
+    def validate(self, attrs):
+
+        return attrs
+
+    def create(self, validated_data):
+
+        return Menu.objects.create(name=validated_data['name'], code=validated_data['code'])
+
+
+class MenuUpdateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+
+        model = Menu
+
+        fields = (
+            'id',
+            'name',
+            'code',
+        )
+
+    def validate(self, attrs):
+
+        return attrs
+
+    def update(self, instance, validated_data):
+
+        instance.name = instance.name
+
+        instance.code = instance.code
+
+        instance.save()
+
+        return instance
